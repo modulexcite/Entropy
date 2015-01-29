@@ -9,6 +9,8 @@ namespace Diagnostics.StatusCodes.Mvc
     {
         public void Configure(IApplicationBuilder app)
         {
+            // Register how to generate response bodies for 400-599 status codes.
+            // This example ends up using the MVC ErrorsController.
             app.UseStatusCodePages(new StatusCodePagesOptions().WithReExecute("/errors/{0}"));
 
             // Set up application services

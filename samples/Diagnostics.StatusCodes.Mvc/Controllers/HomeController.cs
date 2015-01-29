@@ -7,7 +7,7 @@ namespace Diagnostics.StatusCodes.Mvc.Controllers
         // GET: /<controller>/
         public string Index()
         {
-            return "Hello World, try /bob";
+            return "Hello World, try /bob to get a 404";
         }
     }
 }
